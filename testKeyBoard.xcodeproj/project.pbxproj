@@ -77,11 +77,8 @@
 		E467D1271AF423D300661382 /* testKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				E467D12A1AF423D400661382 /* AppDelegate.swift */,
 				E467D12C1AF423D400661382 /* ViewController.swift */,
 				E467D12E1AF423D400661382 /* Main.storyboard */,
-				E467D1311AF423D400661382 /* Images.xcassets */,
-				E467D1331AF423D400661382 /* LaunchScreen.xib */,
 				E467D1281AF423D400661382 /* Supporting Files */,
 			);
 			path = testKeyBoard;
@@ -90,6 +87,9 @@
 		E467D1281AF423D400661382 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E467D1311AF423D400661382 /* Images.xcassets */,
+				E467D1331AF423D400661382 /* LaunchScreen.xib */,
+				E467D12A1AF423D400661382 /* AppDelegate.swift */,
 				E467D1291AF423D400661382 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -411,6 +411,7 @@
 				E467D1461AF423D400661382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E467D1471AF423D400661382 /* Build configuration list for PBXNativeTarget "testKeyBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				E467D1491AF423D400661382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

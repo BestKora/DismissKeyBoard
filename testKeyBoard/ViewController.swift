@@ -2,24 +2,48 @@
 //  ViewController.swift
 //  testKeyBoard
 //
-//  Created by Tatiana Kornilova on 5/2/15.
-//  Copyright (c) 2015 Tatiana Kornilova. All rights reserved.
-//
+// Вместо view.endEditing(true) может быть вызван метод, независящий от ссылки на view
+//  UIApplication.sharedApplication().sendAction("resignFirstResponder", 
+//                                                      to:nil, from:nil, forEvent:nil)
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textField.delegate = self
+// Для textField2 назначение делегата выполнено на storyboard
+          
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+// Вызывается, когда пользователь нажимает кнопку Button
+    
+    @IBAction func actionButton() {
+        view.endEditing(true)
+        
     }
-
+    
+// Вызывается, когда пользователь кликает на view (за пределами textField)
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches , withEvent:event)
+    }
+    
+// Вызывается, когда нажимается клавиша Return
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField2.resignFirstResponder()
+        return true
+    }
 
 }
 
