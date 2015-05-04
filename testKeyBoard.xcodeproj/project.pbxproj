@@ -13,6 +13,7 @@
 		E467D1321AF423D400661382 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467D1311AF423D400661382 /* Images.xcassets */; };
 		E467D1351AF423D400661382 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E467D1331AF423D400661382 /* LaunchScreen.xib */; };
 		E467D1411AF423D400661382 /* testKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467D1401AF423D400661382 /* testKeyBoardTests.swift */; };
+		E467D17B1AF8016400661382 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467D17A1AF8016400661382 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E467D13A1AF423D400661382 /* testKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E467D13F1AF423D400661382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E467D1401AF423D400661382 /* testKeyBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testKeyBoardTests.swift; sourceTree = "<group>"; };
+		E467D17A1AF8016400661382 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E467D12C1AF423D400661382 /* ViewController.swift */,
 				E467D12E1AF423D400661382 /* Main.storyboard */,
+				E467D17A1AF8016400661382 /* SecondViewController.swift */,
 				E467D1281AF423D400661382 /* Supporting Files */,
 			);
 			path = testKeyBoard;
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E467D17B1AF8016400661382 /* SecondViewController.swift in Sources */,
 				E467D12D1AF423D400661382 /* ViewController.swift in Sources */,
 				E467D12B1AF423D400661382 /* AppDelegate.swift in Sources */,
 			);
