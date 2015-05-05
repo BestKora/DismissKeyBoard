@@ -9,7 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-//    @IBOutlet weak var textField: UITextField!
+    
+//----- клавиатура скрывается (keyboard DisMiss) начало
+    
     var keyboardDismissTapGesture: UIGestureRecognizer?
     
     override func viewDidAppear(animated: Bool) {
@@ -46,6 +48,6 @@ class SecondViewController: UIViewController {
         view.endEditing(true)
         
     }
-
+    //----- клавиатура скрывается (keyboard DisMiss) конец
 
 }

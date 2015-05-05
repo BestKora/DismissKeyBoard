@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textField2: UITextField!
     
@@ -21,14 +20,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
           
     }
     
-// Вызывается, когда пользователь нажимает кнопку Button
+//--- Вызывается, когда пользователь нажимает кнопку Button ---
+// outlets textField и textField2, UITextFieldDelegate
+// и textField.delegate = ... не нужны
     
     @IBAction func actionButton() {
         view.endEditing(true)
         
     }
     
-// Вызывается, когда пользователь кликает на view (за пределами textField)
+//--- Вызывается, когда пользователь кликает на view (за пределами textField)--
+// outlets textField и textField2, UITextFieldDelegate
+// и textField.delegate = ... не нужны
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         if let touch = touches.first as? UITouch {
@@ -37,8 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.touchesBegan(touches , withEvent:event)
     }
     
-// Вызывается, когда нажимается клавиша Return
-    
+//--- Вызывается, когда нажимается клавиша Return -----    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         textField2.resignFirstResponder()
