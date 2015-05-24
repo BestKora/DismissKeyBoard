@@ -43,7 +43,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //--- Вызывается, когда нажимается клавиша Return -----    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        textField2.resignFirstResponder()
         return true
     }
 
