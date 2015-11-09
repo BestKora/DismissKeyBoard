@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.delegate = self
-        // Для textField2 назначение делегата выполнено на storyboard
+         // Для textField2 назначение делегата выполнено на storyboard
         
     }
     
